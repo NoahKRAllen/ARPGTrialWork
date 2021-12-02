@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/PlayerShoot.unity
+- path: Assets/Scenes/LootSplosions.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

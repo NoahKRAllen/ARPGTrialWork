@@ -13,9 +13,10 @@ public class PlayerAim : MonoBehaviour
     {
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        RaycastHit hit;
+        RaycastHit[] hits;
+        hits = Physics.RaycastAll(mouseRay, 100.0f);
 
-        if(Physics.Raycast(mouseRay, out hit))
+        foreach(RaycastHit hit in hits)
         {
             if(hit.collider.tag == "Ground")
             {
