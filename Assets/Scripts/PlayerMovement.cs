@@ -25,7 +25,6 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleMovement()
     {
-        _fallingSpeed += _gravity * Time.deltaTime;
 
         Vector3 _playerInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         
@@ -53,6 +52,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 _playerMovement = _unmoddedMovement * _moveSpeed;
         if(!_playerCharacterController.isGrounded)
         {
+            _fallingSpeed += _gravity * Time.deltaTime;
+
             _playerMovement.y = _fallingSpeed;
         }
 

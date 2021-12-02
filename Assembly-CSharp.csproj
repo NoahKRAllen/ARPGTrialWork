@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\PlayerAim.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

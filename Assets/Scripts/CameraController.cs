@@ -9,9 +9,7 @@ public class CameraController : MonoBehaviour
     Vector3 _offset;
 
     public float _smoothSpeed = 0.125f;
-
-    
-
+        
     // Start is called before the first frame update
     void Start()
     {
