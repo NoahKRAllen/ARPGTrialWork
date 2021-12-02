@@ -18,7 +18,9 @@ public class PlayerAim : MonoBehaviour
         if(Physics.Raycast(mouseRay, out hit))
         {
             if(hit.collider.tag == "Ground")
-                gameObject.transform.LookAt(hit.point);   
+            {
+                gameObject.transform.LookAt(hit.point, Vector3.up);
+            }
         }
     }
 }
